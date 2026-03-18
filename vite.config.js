@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: '/my-pwa-app/', //поменяй
+  base: '/project-tracker/', //поменяй
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
