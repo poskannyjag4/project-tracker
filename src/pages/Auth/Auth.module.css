@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    height: 100vh;  
+}
+
+/* .left {
+    width: 60vw;
+
+    background-color: red;
+}
+
+.right {
+    width: 40vw;
+
+    background-color: red;
+} */
+
+.left {
+    flex: 2;
+    background: #050505;
+    border-right: 1px solid #1a1a1a;
+}
+
+.right {
+    flex: 1;
+    background-color: #000;
+}
