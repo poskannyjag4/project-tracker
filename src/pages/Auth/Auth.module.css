@@ -62,8 +62,17 @@ h1{
     text-transform: uppercase;
     font-weight: bold;
     align-items: center;
-
+    border: none;
     cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.googleBtn:hover{
+    transform: translate(10px, -10px);
+    background-color: var(--primary-color);
+    color: white;
+    fill: white;
+    box-shadow: -20px 20px 0 0 white;
 }
 
 .googleBtn svg {
