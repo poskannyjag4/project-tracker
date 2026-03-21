@@ -40,9 +40,40 @@ export function Auth(){
     const rightSide = document.createElement('div');
     rightSide.classList.add(styles.right);
 
+    const grid = document.createElement('div');
+    grid.classList.add(styles.grid)
+    grid.innerHTML = `
+        <div class="${styles.card} ${styles.card__project}">
+            <p>Current <br /> Goal</p>
+            <h1>Finish MVP</h1>
+            <div class="${styles.card__progress}">
+                <div class="${styles.progress__fill}"></div>
+            </div>
+        </div>
+
+        <div class="${styles.card} ${styles.card__task}">
+            <p class="text">Current</p>
+            <h1>Lab 1</h1>
+        </div>
+        
+        <div class="${styles.card} ${styles.card__live}">
+            <p class="text">system</p>
+            <h1>Live</h1>
+        </div>
+
+        
+        <div class="${styles.card} ${styles.card__complete}">
+            <p class="text">Progress</p>
+            <h1><span>88%</span> of project</h1>
+        </div>
+    `;
+
+    rightSide.append(grid);
+
     screen.appendChild(leftSide);
     screen.appendChild(rightSide);
 
     return screen;
     
 } 
+

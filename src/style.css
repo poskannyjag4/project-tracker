@@ -13,3 +13,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden; /* Чтобы не было горизонтального скролла */
 }
+
+:root{
+  --background-color: #0a0a0a;
+  --primary-color: #ff3e3e;
+  --border-color: #1a1a1a;
+  --secondary-color: #555;
+}
