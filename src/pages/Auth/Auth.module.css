@@ -19,9 +19,67 @@
     flex: 2;
     background: #050505;
     border-right: 1px solid #1a1a1a;
+
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 5vw;
+     
 }
 
 .right {
     flex: 1;
     background-color: #000;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 14rem;
+    font-weight: 900;
+    text-align: left;
+    line-height: 0.75;
+    letter-spacing: -1rem;
+
+    margin-left: -1rem;
+}
+
+.slogan{
+    font-size: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #555;
+    letter-spacing: 0.5rem;
+
+}
+
+
+
+.caution{
+    color: #ff3e3e;
+}
+
+.googleBtn{
+    display: inline-flex;
+    justify-content: center;
+    gap: 2rem;
+
+    color: black;
+
+    margin-top: 5vw;
+    width: 45%;
+    height: 10vh;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.googleBtn svg {
+    width: 2.5rem;
+    height: 2.5rem;
 }
