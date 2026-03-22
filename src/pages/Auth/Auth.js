@@ -1,4 +1,5 @@
 import styles from './Auth.module.css'
+import { loginUser } from '../../api/auth';
 
 export function Auth(){
     //base container
@@ -80,7 +81,7 @@ export function Auth(){
 export function initGoogleBtn(){
     google.accounts.id.initialize({
         client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
-        callback: (response)=> console.log(response.credential)
+        callback: loginUser
     });
 
     google.accounts.id.renderButton(
