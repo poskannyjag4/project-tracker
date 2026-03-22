@@ -1,9 +1,11 @@
 .container {
     display: flex;
-    height: 100vh;  
+    height: 100vh;
+    color: white;  
 }
 
 .left {
+    
     flex: 2;
     background: var(--background-color);
     border-right: 1px solid var(--border-color);
@@ -53,7 +55,7 @@ h1{
     gap: 2rem;
 
     color: black;
-
+    background-color: white;
     margin-top: 5vw;
     width: 45%;
     height: 10vh;
@@ -175,3 +177,4 @@ h1{
 .card__complete span{
     color: var(--primary-color);
 }
+
