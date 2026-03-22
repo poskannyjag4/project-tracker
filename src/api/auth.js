@@ -3,7 +3,7 @@ import { User } from '../entities/User'
 export async function loginUser(response){
     const payload = response.credential;
 
-    const resp = await fetch('http://localhost:80/api/auth/google', {
+    const resp = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth/google`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -13,7 +13,7 @@ export async function loginUser(response){
     });
 
     if(!resp.ok){
-        console.error("какая-то хуета");
+        console.error("ошибка вышла");
         return null;
     }
 
@@ -21,6 +21,8 @@ export async function loginUser(response){
 
     const user = User.fromJson(userData);
 
-    console.log(user);
+    localStorage.setItem('apiToken', user.token);
+    localStorage.setItem('userName', user.name);
+    localStorage.setItem('userEmail', user.email);
 
 }
