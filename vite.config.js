@@ -2,7 +2,13 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: '/project-tracker/', //поменяй
+  server: {
+    headers: {
+      'Cross-Origin-Opener-Policy': 'same-origin-allow-popups',
+      'Cross-Origin-Embedder-Policy': 'unsafe-none'
+    }
+  },
+  base: '/project-tracker/',
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
